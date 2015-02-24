@@ -1,5 +1,1 @@
-
-[nil0, nil1, id] = process.argv
-
-while true
-	null
+while 1 then

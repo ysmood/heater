@@ -10,9 +10,8 @@ rate = Math.min +process.argv[2], maxCoreNum
 else
 	['node', '.js']
 
-fork = (id) ->
-	child_process.spawn bin,
-		[__dirname + '/fuel' + ext, '--', id]
+fork = ->
+	child_process.spawn bin, [__dirname + '/fuel' + ext]
 
 fire = ->
 	[0...rate].forEach fork
