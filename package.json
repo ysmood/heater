@@ -1,0 +1,37 @@
+{
+  "name": "heater",
+  "version": "0.0.2",
+  "description": "Feel cold? Try it.",
+  "main": "main.js",
+  "bin": {
+    "heater": "dist/main.js"
+  },
+  "scripts": {
+    "no": "no",
+    "test": "no test -t 10000",
+    "prepublish": "no build -a"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ysmood/heater.git"
+  },
+  "keywords": [
+    "warm",
+    "heat",
+    "heater"
+  ],
+  "author": "http://ysmood.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysmood/heater/issues"
+  },
+  "homepage": "https://github.com/ysmood/heater",
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "commander": "^2.6.0",
+    "nokit": "^0.5.4"
+  }
+}
