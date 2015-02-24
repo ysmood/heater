@@ -11,3 +11,7 @@ Feel cold? Try it.
 `heater -h` Display help.
 
 `heater [rate]` The higher the warmer. It is the number of the machine's availble cpu core.
+
+## Example
+
+`heater 3`

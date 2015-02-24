@@ -15,17 +15,22 @@ fork = ->
 
 fire = ->
 	[0...rate].forEach fork
-	console.log "fuel: #{rate}"
+	console.log "Rate: #{rate}\nCtrl-C to stop"
+
+help = ->
+	console.log """
+
+	Usage: heater [coreNumber]\n
+	  This machine's max core number: #{maxCoreNum}
+
+	Example:\n
+	  heater 3
+	"""
 
 main = ->
-	if ['help', '-h', 'h', '--help'].reduce (res, el) ->
-		process.argv.indexOf(el) > 0 | res
-	, false
-		console.log "
-		\nUsage: heater [coreNumber]\n\n
-		  This machine's max core number: #{maxCoreNum}\n
-		"
-	else
+	if rate > 0
 		fire()
+	else
+		help()
 
 main()
